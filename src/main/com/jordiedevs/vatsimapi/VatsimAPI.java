@@ -13,9 +13,9 @@ import java.net.URL;
 
 public class VatsimAPI {
 
-    public static VatsimAPI instance;
+    public static VatsimAPI instance = new VatsimAPI();
 
-    public VatsimAPI(){
+    private VatsimAPI(){
         instance = this;
         System.out.println("VatsimAPI instance set..");
     }
