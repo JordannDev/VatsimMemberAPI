@@ -24,24 +24,24 @@ page. I haven't setup a Maven source for it yet, but I intend on doing so.
 Getting a Members Controller Rating
 ```java
 public static void main(String[] args){
-    VatsimAPI api = new VatsimAPI();
-    System.out.println(api.getInstance().createClient("1429747").getControllerRating());
+    Client c = new Client.Builder().getClient("1429747");
+    System.out.println(c.getControllerRating());
 }
 ```
 
 Getting a Members Pilot Rating
 ```java
 public static void main(String[] args){
-    VatsimAPI api = new VatsimAPI();
-    System.out.println(api.getInstance().createClient("1429747").getPilotRating());
+    Client c = new Client.Builder().getClient("1429747");
+    System.out.println(c.getPilotRating());
 }
 ```
 
 Getting a Members name
 ```java
 public static void main(String[] args){
-    VatsimAPI api = new VatsimAPI();
-    System.out.println(api.getInstance().createClient("1429747").getPilotRating());
+    Client c = new Client.Builder().getClient("1429747");
+    System.out.println(c.getFirstName());
 }
 ```
 
