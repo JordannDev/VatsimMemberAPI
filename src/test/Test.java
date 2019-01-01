@@ -4,7 +4,6 @@ import com.jordiedevs.vatsimapi.VatsimAPI;
 public class Test {
 
     public static void main(String[] args) {
-        VatsimAPI vatsimAPI = new VatsimAPI();
         // getClient will automatically download, and cache the users information.
         Client client = new Client.Builder().getClient("1429747").build();
         System.out.println("\n" +
