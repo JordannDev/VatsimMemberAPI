@@ -1,4 +1,4 @@
-# Vatsim Member API
+# Vatsim Member API - Version 1.1
 
 **Just keep in mind this is my first public API. This was orgnially made for private use. I highly encourge people to make improvements and share them so everyone can benifit.**
 
@@ -24,7 +24,7 @@ page. I haven't setup a Maven source for it yet, but I intend on doing so.
 Getting a Members Controller Rating
 ```java
 public static void main(String[] args){
-    Client c = new Client.Builder().getClient("1429747");
+    Client c = new Client.Builder().getClient("1429747").build();
     System.out.println(c.getControllerRating());
 }
 ```
@@ -32,7 +32,7 @@ public static void main(String[] args){
 Getting a Members Pilot Rating
 ```java
 public static void main(String[] args){
-    Client c = new Client.Builder().getClient("1429747");
+    Client c = new Client.Builder().getClient("1429747").build();
     System.out.println(c.getPilotRating());
 }
 ```
@@ -40,7 +40,7 @@ public static void main(String[] args){
 Getting a Members name
 ```java
 public static void main(String[] args){
-    Client c = new Client.Builder().getClient("1429747");
+    Client c = new Client.Builder().getClient("1429747").build();
     System.out.println(c.getFirstName());
 }
 ```
