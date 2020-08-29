@@ -1,4 +1,4 @@
-# Vatsim Member API - Version 1.1
+# Vatsim Member API - Version 1.2
 
 **Just keep in mind this is my first public API. This was orgnially made for private use. I highly encourge people to make improvements and share them so everyone can benifit.**
 
